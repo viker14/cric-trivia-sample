@@ -1,0 +1,189 @@
+div {
+  box-sizing: border-box;
+}
+
+.mainPage {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.mainPage .verticalStrip {
+  max-width: 1008px;
+  height: auto;
+  display: inline-block;
+}
+
+.mainPage .verticalStrip .QuestionStrip {
+  height: 150px;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #efefef;
+  margin-bottom: 20px;
+}
+
+.mainPage .verticalStrip .question {
+  width: 100%;
+  font-size: 18px;
+  padding: 4px;
+  background: grey;
+  box-sizing: border-box;
+  margin: 0px;
+  text-align: left;
+}
+
+.form-control {
+  margin-top: 10px;
+  display: block;
+  width: 20%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.mainPage .verticalStrip .ButtonBox {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.mainPage .verticalStrip .ButtonBox button {
+  width: 132px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: 1px solid #efefef;
+  text-align: center;
+  float: right;
+  background: 0 0;
+  font-size: 11px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.45;
+  letter-spacing: 1.5px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.ModalWrapperOverlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: flex-start;
+  -webkit-justify-content: center;
+  min-height: 100vh;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(38, 38, 38, 0.9);
+}
+.chartBox {
+  width: 600px;
+  height: 80vh;
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+}
+
+.chartBox .barBox {
+  width: 420px;
+  height: 100%;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: stretch;
+  -webkit-justify-content: space-between;
+  align-items: flex-end;
+}
+
+.chartBox .barBox .barCorrect {
+  width: 200px;
+  height: 100%;
+  background: green;
+  border: solid 1px black;
+}
+
+.chartBox .barBox .barWrong {
+  width: 200px;
+  height: 100%;
+  background: red;
+  border: solid 1px black;
+}
+
+.chartBox .contentBox {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.chartBox .contentBox .correctAnswer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+}
+
+.chartBox .contentBox .wrongAnswer {
+  width: 100%;
+  height: 40px;
+  display: flex;
+}
+
+.chartBox .contentBox .labelBox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.chartBox .contentBox .labelText {
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.45;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  color: black;
+  margin: 0px;
+}
+
+@media screen and (max-width: 480px) {
+  .mainPage .verticalStrip {
+    width: 100%;
+  }
+  .form-control {
+    width: 175px;
+  }
+
+  .chartBox {
+    width: calc(100% - 10px);
+  }
+
+  .chartBox .barBox {
+    width: 180px;
+  }
+
+  .chartBox .barBox .barCorrect {
+    width: 80px;
+  }
+
+  .chartBox .barBox .barWrong {
+    width: 80px;
+  }
+}
